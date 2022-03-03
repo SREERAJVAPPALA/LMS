@@ -262,14 +262,14 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="student_book_search.php" class="waves-effect waves-dark">
+                                            <a href="accordion.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">view Books</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
 					<li class=" ">
-                                            <a href="fine.php" class="waves-effect waves-dark">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Fine</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -286,7 +286,7 @@
                                     <ul class="pcoded-submenu">
                                         
 					<li class=" ">
-                                            <a href="student_books_taken.php" class="waves-effect waves-dark">
+                                            <a href="accordion.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Books Taken</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -294,7 +294,7 @@
                                         </li>
                                         
                                         <li class=" ">
-                                            <a href="student_book_request.php" class="waves-effect waves-dark">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Request Book</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -334,7 +334,7 @@
                         </div>
                         <!-- Page-header end -->
                         <div class="pcoded-inner-content">
-                            <!-- Main-body start -->
+                             <!-- Main-body start -->
                             <div class="main-body">
                                 <div class="page-wrapper">
                                   
@@ -342,72 +342,84 @@
                                     <div class="page-body">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <!-- Basic Form Inputs card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Add New Books</h5>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <form>
-                                                            <div class="form-group row">
-                                                                <label class="col-sm-2 col-form-label">Name of the Book</label>
-                                                                <div class="col-sm-10">
-                                                                    <input type="text" class="form-control" placeholder="Type Book Name with edition">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row">
-                                                                <label class="col-sm-2 col-form-label">Author</label>
-                                                                <div class="col-sm-10">
-                                                                    <input type="text" class="form-control"
-                                                                    placeholder="Type Author Name">
-                                                                </div>
-                                                            </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-2 col-form-label">No. of Copies</label>
-                                                                    <div class="col-sm-10">
-                                                                        <select name="select" class="form-control">
-                                                                            <option value="opt1">1</option>
-                                                                            <option value="opt2">2</option>
-                                                                            <option value="opt3">3</option>
-                                                                            <option value="opt4">4</option>
-                                                                            <option value="opt5">5</option>
-                                                                            <option value="opt6">6</option>
-                                                                            <option value="opt7">7</option>
-                                                                            <option value="opt8">8</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-2 col-form-label">Category</label>
-                                                                    <div class="col-sm-10">
-                                                                        <select name="select" class="form-control">
-                                                                            <option value="opt1">Literature</option>
-                                                                            <option value="opt2">IT and computer Science</option>
-                                                                            <option value="opt3">Architecture</option>
-                                                                            <option value="opt4">Management</option>
-                                                                            <option value="opt5">Mathematics</option>
-                                                                            <option value="opt6">Physics</option>
-                                                                            <option value="opt7">Chemistry</option>
-                                                                            <option value="opt8">Electronics</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                        
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-2 col-form-label">Upload Image</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="file" class="form-control">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row m-t-30">
-                                                                            <div class="col-md-12">
-                                                                                <button type="button" class="btn btn-primary btn-md btn-block  waves-effect waves-light text-center m-b-20">Add</button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
+                                                
+                                                    <!-- Hover table card start -->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Book List</h5>
+                                               
+                                                <div class="card-header-right">
+                                                    <ul class="list-unstyled card-option">
+                                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                                        <li><i class="fa fa-trash close-card"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-block table-border-style">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                
+                                                                <th>Book_name</th>
+                                                              
+                                                                <th>Author</th>
+								<th>copies</th>
+                                                                <th>catagory</th>
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+		                   			<tr>
+                                                                
+                                                                
+                                                                <td>
+								<?php
+								include "conn.php";
+								$sql="select book_name from book_list";
+								$result=mysqli_query($conn,$sql);
+								$row=mysqli_fetch_assoc($result);
+								echo $row["book_name"];
+								?>	
+								</td>
+                                                                <td>
+								<?php
+								include "conn.php";
+								$sql="select author from book_list";
+								$result=mysqli_query($conn,$sql);
+								$row=mysqli_fetch_assoc($result);
+								echo $row["author"];
+								?>
+								</td>
+                                                                <td>
+								<?php
+								include "conn.php";
+								$sql="select no_copies from book_list";
+								$result=mysqli_query($conn,$sql);
+								$row=mysqli_fetch_assoc($result);
+								echo $row["no_copies"];
+								?>
+								</td>
+                                                                <td>
+								<?php
+								include "conn.php";
+								$sql="select category from book_list";
+								$result=mysqli_query($conn,$sql);
+								$row=mysqli_fetch_assoc($result);
+								echo $row["category"];
+								?>
+								</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+				
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Hover table card end -->
                                                     <div id="styleSelector">
 
                                                     </div>

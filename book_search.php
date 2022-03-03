@@ -262,14 +262,14 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="student_book_search.php" class="waves-effect waves-dark">
+                                            <a href="accordion.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">view Books</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
 					<li class=" ">
-                                            <a href="fine.php" class="waves-effect waves-dark">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Fine</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -286,7 +286,7 @@
                                     <ul class="pcoded-submenu">
                                         
 					<li class=" ">
-                                            <a href="student_books_taken.php" class="waves-effect waves-dark">
+                                            <a href="accordion.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Books Taken</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -294,7 +294,7 @@
                                         </li>
                                         
                                         <li class=" ">
-                                            <a href="student_book_request.php" class="waves-effect waves-dark">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Request Book</span>
                                                 <span class="pcoded-mcaret"></span>
