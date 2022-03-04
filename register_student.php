@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+        include("conn.php");
+    ?>
 
 <head>
     <title>Lms cet </title>
@@ -95,7 +98,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <form class="md-float-material form-material">
+                    <form class="md-float-material form-material" method="post">
                      
                         <div class="auth-box card">
                             <div class="card-block">
@@ -105,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="text" name="user-name" class="form-control" required="">
+                                    <input type="text" name="name" class="form-control" required="">
                                     <span class="form-bar"></span>
                                     <label class="float-label">Name</label>
                                 </div>
@@ -115,12 +118,12 @@
                                     <label class="float-label">Username</label>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="text" name="user-name" class="form-control" required="">
+                                    <input type="text" name="dep-name" class="form-control" required="">
                                     <span class="form-bar"></span>
                                     <label class="float-label">Department</label>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="text" name="user-name" class="form-control" required="">
+                                    <input type="text" name="ktu-id" class="form-control" required="">
                                     <span class="form-bar"></span>
                                     <label class="float-label">KTU ID</label>
                                 </div>
@@ -148,7 +151,7 @@
 
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign up now</button>
+                                        <input type="submit" name="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" value="sign up">
                                     </div>
                                 </div>
                                 <hr/>
@@ -156,6 +159,32 @@
                             </div>
                         </div>
                     </form>
+                    <?php
+                        if(isset($_POST["submit"]))
+                        {
+                            $name=$_POST["name"];
+                            $username=$_POST["user-name"];
+                            $depname=$_POST["dep-name"];
+                            $ktuid=$_POST["ktu-id"];
+                            $email=$_P0ST["email"];
+                            $password=$_P0ST["password"];
+                            $confirmpassword=$_P0ST["confirm-password"];
+
+
+                            $sql1="insert into register_student values('$name','$username','$depname','$ktuid','$email')";
+                            $sql2="insert into student_login values('$username','$password','$confirmpassword')";
+                            if(mysqli_query($conn,$sql1) and mysqli_query($conn,$sql2))
+                            {
+                                echo '<script>alert("1 data entered");</script>)';
+                            }
+                            else
+                            {
+                                echo '<script>alert("1 data nt entered");</script>)';
+                               echo mysqli_error($conn);
+                            }
+                        }
+
+                    ?>
                 </div>
                 <!-- end of col-sm-12 -->
             </div>
